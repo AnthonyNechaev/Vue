@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="css/HW 1.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="application"> 
+        <article v-for="cat in cats">
+            <div class="cat__info">
+            <h3>{{cat.name}}</h3>
+            <div class="cat__description">
+                <p>Возраст: {{cat.age}}</p>
+                <p>Цвет: {{cat.color}}</p>
+            </div>
+            <img class="cat__image" :src="cat.img" :alt="cat.name">
+            </div>
+            <a href="#" class="cat__button">Подробнее</a>
+        </article>
+    </div>
+
+
+    <script src="js/HW 1.js"></script>
+</body>
+</html>
