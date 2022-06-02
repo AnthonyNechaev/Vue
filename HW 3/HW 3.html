@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="application"> 
+        <input type="text" v-model="userInput">
+        <p v-for="article in userSearch">{{article.title}}</p>
+    </div>
+
+
+    <script src="js/HW 3.js"></script>
+</body>
+</html>
